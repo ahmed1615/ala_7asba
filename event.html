@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet" 
+     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>events </title>
+</head>
+<body>
+    <style>
+        body{padding-top: 30px;
+       
+        }
+        #bb button{
+            padding-top: 30px;
+            background-color: aqua;
+    
+        }
+       
+    </style>
+
+
+
+    <div class="container">
+        <h1>fuction and envents</h1>
+        <h1>resultado suma</h1>
+        <div class="row">
+        <div class="form-group-col-4">
+            <label for="">number 1: </label>
+            <input type="number" id="num1" class="from-control" value="60">
+        </div>
+        <div class="form-group-col-4">
+            <label for="">number 2: </label>
+            <input type="number" id="num2" class="from-control" value="40">
+        </div>
+        <div class="form-group-col-4" id="bb">
+            <button  class="btn btn_primary" id="boton_operation" onclick="clickbutton()">sum</button>
+        
+        </div>
+        </div>
+        <div class="row mt-3">
+         <div class="form-group col-12">
+             <label for="">operations</label>
+             <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="r1" checked>
+                <label class="form-check-label" for="flexRadioDefault1" >
+                  sumar
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="r2" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  restar
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="r3" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  multiplicar
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="r4" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  dividir
+                </label>
+              </div>
+         </div>  
+         <select name="" id="cho">
+            <option value="za2d" id="r1">+</option>
+            <option value="na2s" id="r2">-</option>
+            <option value="fe" id="r3">*</option>
+            <option value="3ala" id="r4">/</option>
+
+
+
+         </select>
+         
+
+
+        </div>
+        <div class="row wt-3">
+            <div class="form-group col-4">
+                <label for="">resultado</label>
+                <input type="text" class="form-control"
+                id="txt_resultado" disabled>
+
+            </div>
+            
+        </div>
+    </div>
+<script src="ev.js"></script>
+</body>
+</html>
